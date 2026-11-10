@@ -1,20 +1,23 @@
 const translations = {
   sl: {
-    page_title: "L&G DJ, Sound & Light — DJ & Tehnika za zabave, poroke in poslovne dogodke",
+    page_title: "L&G DJ, Sound & Light — DJ Vant & Gašper | Poroke, Zabave & Poslovni dogodki",
     nav_services: "Ponudba",
-    nav_about: "O nama",
+    nav_vant: "DJ Vant",
+    nav_weddings: "Poroke & Tehnika",
     nav_gallery: "Galerija",
-    nav_terms: "Pogoji poslovanja",
+    nav_terms: "Pogoji",
     nav_book: "Povpraševanje",
     hero_badge: "Luka (DJ Vant) & Gašper — Glasba & Tehnika",
-    hero_title: 'Vrhunska glasba, luči in <span class="text-gradient">lastnoročno zgrajeno ozvočenje</span> za vaš dogodek.',
-    hero_lead: "Združujeva klubske DJ izkušnje z dovršeno avdio-vizualno tehniko. Poskrbiva za nepozabno vzdušje na privat zabavah, porokah in poslovnih dogodkih za vse generacije.",
+    hero_title: 'Klubska DJ energija, luči in <span class="text-gradient">lastnoročno zgrajeno ozvočenje</span> za vaš dogodek.',
+    hero_lead: "Združujeva izkušnje z največjih klubskih plesišč in dovršeno avdio-vizualno produkcijo. Poskrbiva za nepozabno vzdušje na porokah, privat zabavah in poslovnih dogodkih za vse generacije.",
     hero_cta_primary: "Pošlji e-mail povpraševanje",
-    hero_cta_secondary: "Preveri ponudbo",
-    pill_music: "Glasba za vse generacije",
-    pill_sound: "Lastno ozvočenje & monitorji",
-    pill_light: "Profesionalna svetlobna tehnika",
-    hero_card_sub: "Celovita avdio in svetlobna produkcija",
+    hero_cta_secondary: "Oglej si galerijo nastopov",
+    pill_music: "DJ Vant — glasba za vse generacije",
+    pill_sound: "Lastno ozvočenje & odrski monitorji",
+    pill_light: "Svetlobna tehnika & lesena DJ miza",
+    collage_badge_1: "Poroke & Zasebni dogodki",
+    collage_badge_2: "DJ Vant — Klubski nastopi",
+    collage_badge_3: "Večerni ambient",
     notice_tag: "Pomembno obvestilo glede sodelovanja",
     notice_title: "Delava izključno preko študentske napotnice",
     notice_text: 'Nimava registrirane dejavnosti (s.p. ali d.o.o.) in nastope ter tehnično izvedbo opraviva <strong>izključno preko študentske napotnice</strong>. Sodelovanje je preprosto in hitro za podjetja, organizatorje, društva in pravne osebe, pred samim dogodkom pa se o vseh podrobnostih dogovorimo preko e-pošte.',
@@ -27,7 +30,7 @@ const translations = {
     srv1_f2: "Močno, čisto ozvočenje in dinamični svetlobni efekti",
     srv1_f3: "Prilagodljiva postavitev za notranje ali zunanje prostore",
     srv1_cta: "Povpraševanje za privat zabavo",
-    srv2_ribbon: "Prilagojena izvedba",
+    srv2_ribbon: "Najbolj priljubljeno",
     srv2_title: "Poroke",
     srv2_desc: "Glasbena spremljava od sprejema svatov in obreda do prvega plesa ter zabave do jutranjih ur. Estetska lesena DJ miza z možnostjo personaliziranega napisa mladoporočencev in brezhibna zvočna kulisa za vse generacije.",
     srv2_f1: "Vrtiva glasbo za vse generacije svatov po vašem okusu",
@@ -40,29 +43,63 @@ const translations = {
     srv3_f2: "Tehnična podpora za govore, podelitve in žive nastope",
     srv3_f3: "Zanesljiva izvedba, čist zvok in profesionalna osvetlitev",
     srv3_cta: "Povpraševanje za poslovni dogodek",
-    about_kicker: "KDO SVA",
-    about_title: "Združujeva glasbo in tehniko",
+    vant_kicker: "SPOZNAJTE DJ-JA",
+    vant_title: 'Luka — <span class="text-gradient">DJ Vant</span>',
+    vant_lead: "Od razprodanih klubskih plesišč in študentskih žurov (Klub Cirkus in drugi klubski odri) do elegantnih poročnih slavij in zasebnih zabav.",
+    vant_p1: 'Kot <strong>DJ Vant</strong> v vsak nastop prinašam pravo klubsko tehniko miksanja, branje publike v živo in prilagodljivost, ki poveže vse generacije na plesišču. Ne uporabljam vnaprej pripravljenih seznamov predvajanja — vsak set gradim sproti glede na energijo v prostoru.',
+    vant_p2: "Ne glede na to, ali gre za vrhunec klubske noči z modernim house, tech-house, hip-hop in komercialnim zvokom ali pa za poročno zabavo z disco, pop/rock, ex-Yu in domačimi uspešnicami — poskrbim, da plesišče ostane polno do jutra.",
+    g_tag1: "House & Club Hits",
+    g_tag2: "80s / 90s / 00s Klasike",
+    g_tag3: "Pop, Rock & Disco",
+    g_tag4: "Balkan / Ex-Yu & Slo",
+    g_tag5: "Latino & R&B",
+    g_tag6: "Po željah mladoporočencev / gostov",
+    stat1_label: "Profesionalna klubska oprema",
+    stat2_label: "Vse generacije & glasbeni stili",
+    stat3_label: "Tekoči prehodi in branje plesišča",
+    vphoto1_tag: "DJ Vant v elementu",
+    vphoto2_tag: "Klub Cirkus",
+    vphoto3_tag: "Polno plesišče",
+    about_kicker: "POROKE, OZVOČENJE & TEHNIKA",
+    about_title: "Gašperjeva zvočna & svetlobna produkcija",
     about_fb_bio: "»Združujeva glasbo in tehniko. Luka (DJ Vant) prinaša klubske izkušnje in vrti glasbo za vse generacije. Gašper kot tehnik skrbi za luči in lastnoročno zgrajeno ozvočenje. Imava tudi opremo za podporo živim nastopom z monitorji.«",
-    luka_title: "Luka — DJ Vant",
-    luka_desc: "Prinaša pristne klubske izkušnje, občutek za plesišče in tekoče miksanje. Njegov repertoar zajema glasbo za vse generacije — od sodobnih klubskih, house in komercialnih ritmov do brezčasnih pop, rock, disco in domačih uspešnic.",
-    gasper_title: "Gašper — Sound & Light Tehnik",
-    gasper_desc: "Skrbi za brezhibno zvočno sliko z lastnoročno zgrajenim ozvočenjem (močni nizkotonci in satelitski zvočniki) ter programirano svetlobno tehniko (moving head luči, ambientalna osvetlitev). Razpolagava tudi z odrskimi monitorji za podporo živim glasbenim nastopom.",
-    specs_heading: "Kaj prineseva na vaš dogodek?",
-    spec1_t: "Lastnoročno zgrajeno ozvočenje",
-    spec1_d: "Močan, topel in čist zvok z vrhunskimi nizkotonci in sateliti, prilagojen velikosti prostora.",
-    spec2_t: "Svetlobna tehnika & luči",
-    spec2_d: "Dinamične moving-head luči in ambientalna osvetlitev za pravo klubsko ali poročno vzdušje.",
-    spec3_t: "Podpora živim nastopom z monitorji",
-    spec3_d: "Dodatna oprema, mikrofoni in odrski monitorji za glasbene goste, pevce ali govornike.",
-    spec4_t: "Unikatna lesena DJ miza",
-    spec4_d: "Urejen in estetski izgled odra — na porokah tudi z možnostjo personaliziranega napisa.",
-    gallery_kicker: "UTRINKI & POSTAVITEV",
-    gallery_title: "Najina postavitev v živo",
-    gallery_subtitle: "Fotografije z najinega Facebook profila L&G DJ, Sound & Light — lastnoročno zgrajeno ozvočenje, svetlobni efekti in prilagodljiva lesena DJ miza.",
-    gal1_title: "Klasična postavitev za zabave in dogodke",
-    gal1_desc: "Luka (DJ Vant) za mešalno mizo, obdan z lastnoročno zgrajenim ozvočenjem in moving-head lučmi.",
-    gal2_title: "Poročna postavitev s personaliziranim napisom",
-    gal2_desc: "Estetska lesena DJ miza, prilagojena poročnemu slavju, skupaj s celotnim zvočnim in svetlobnim sistemom.",
+    specs_heading: "Zakaj je najina postavitev idealna za poroke in dogodke?",
+    spec1_t: "Lastnoročno zgrajeno ozvočenje (Custom Sound)",
+    spec1_d: "Gašperjevo lastnoročno zgrajeno ozvočenje z močnimi nizkotonci in sateliti zagotavlja topel, poln in kristalno čist zvok — tako pri tihem govoru kot ob polnem plesišču.",
+    spec2_t: "Unikatna lesena DJ miza s personaliziranim napisom",
+    spec2_d: "Namesto kovinskih stojal in kablov uporabljava estetsko leseno DJ mizo, ki se odlično poda v poročne in rustikalne ambiente, z možnostjo napisa mladoporočencev (npr. Poroka Eva & Jaka).",
+    spec3_t: "Podpora živim nastopom, bendom in govornikom",
+    spec3_d: "Na porokah in prireditvah pogosto nastopajo tudi pevci, instrumentalisti ali govorniki — prineseva dodatno mešalno mizo, mikrofone na stojalih in odrski monitor.",
+    spec4_t: "Programirane luči & večerni ambient",
+    spec4_d: "Moving-head luči in barvni reflektorji, ki med večerjo ustvarijo prijeten romantičen ambient, ponoči pa pravo plesišče.",
+    wcap1_t: "Pogled z DJ pulta na večerno slavje",
+    wcap1_d: "Glasbena spremljava večerje in zabava pod zvezdami",
+    wcap2_t: "Podpora živim nastopom",
+    wcap2_d: "Mikrofoni, mešalna miza in odrski monitor",
+    wcap3_t: "Naravni & rustikalni prostori",
+    wcap3_d: "Lesena DJ miza se zlije z vsakim prostorom",
+    gallery_kicker: "FOTO GALERIJA",
+    gallery_title: "Utrinki z nastopov, porok in klubskih odrov",
+    gallery_subtitle: "Oglejte si fotografije z nastopov DJ Vanta, poročnih postavitev in našega lastnoročno zgrajenega ozvočenja. Kliknite na fotografijo za povečan pogled.",
+    filter_all: "Vse fotografije",
+    filter_weddings: "Poroke & Ozvočenje",
+    filter_vant: "DJ Vant & Klubi",
+    tag_wedding: "Poroka",
+    tag_club: "Klubski nastop",
+    tag_vant: "DJ Vant",
+    tag_tech: "Tehnika & Ozvočenje",
+    g1_title: "Personalizirana poročna DJ miza",
+    g2_title: "DJ Vant — Klub Cirkus",
+    g3_title: "Večerni ambient pod lučkami",
+    g4_title: "Natančno miksanje v živo",
+    g5_title: "Nora energija in polno plesišče",
+    g6_title: "Oprema za podporo živim nastopom",
+    g7_title: "Klubska & event produkcija",
+    g8_title: "Postavitev v lesenem paviljonu",
+    g9_title: "Nepozabna zabava do jutranjih ur",
+    g10_title: "Za mešalno mizo pod disko kroglo",
+    g11_title: "Klasična postavitev za zabave",
+    g12_title: "Pozitivna energija za mešalko",
     fb_bar_sub: "Spremljajte naju tudi na uradnem Facebook profilu",
     fb_btn: "Odpri Facebook profil",
     book_kicker: "KONTAKT & REZERVACIJE",
@@ -84,21 +121,24 @@ const translations = {
     footer_legal: "Delo izključno preko študentske napotnice (brez registrirane dejavnosti)."
   },
   en: {
-    page_title: "L&G DJ, Sound & Light — DJ, Custom Sound & Lighting for Parties, Weddings & Corporate Events",
+    page_title: "L&G DJ, Sound & Light — DJ Vant & Gašper | Weddings, Parties & Corporate Events",
     nav_services: "Services",
-    nav_about: "About Us",
+    nav_vant: "DJ Vant",
+    nav_weddings: "Weddings & Tech",
     nav_gallery: "Gallery",
-    nav_terms: "Booking Terms",
+    nav_terms: "Terms",
     nav_book: "Book via Email",
     hero_badge: "Luka (DJ Vant) & Gašper — Music & Production",
-    hero_title: 'Club-ready DJ sets, lighting & <span class="text-gradient">custom-built sound</span> for your event.',
-    hero_lead: "We combine club DJ experience with dedicated audio-visual engineering. Delivering unforgettable atmosphere for private parties, weddings, and corporate events across all generations.",
+    hero_title: 'Club DJ energy, lighting & <span class="text-gradient">custom-built sound</span> for your event.',
+    hero_lead: "We combine big-room club DJ experience with dedicated audio-visual engineering. Delivering an unforgettable atmosphere for weddings, private parties, and corporate events across all generations.",
     hero_cta_primary: "Send Email Inquiry",
-    hero_cta_secondary: "Explore Services",
-    pill_music: "Music for all generations",
+    hero_cta_secondary: "View Live Gallery",
+    pill_music: "DJ Vant — music for all generations",
     pill_sound: "Custom sound system & stage monitors",
-    pill_light: "Professional lighting production",
-    hero_card_sub: "Complete audio & lighting production",
+    pill_light: "Lighting rig & custom wooden DJ booth",
+    collage_badge_1: "Weddings & Private Events",
+    collage_badge_2: "DJ Vant — Club Shows",
+    collage_badge_3: "Evening Atmosphere",
     notice_tag: "Important Booking & Billing Notice",
     notice_title: "We work exclusively via Student Referral (Študentska napotnica)",
     notice_text: 'We do not have a registered business entity (s.p. or d.o.o.) and operate <strong>exclusively via the Slovenian student referral system (študentska napotnica)</strong>. Billing is quick and straightforward for companies, organizations, and event organizers, and all event details are arranged directly via email.',
@@ -111,7 +151,7 @@ const translations = {
     srv1_f2: "Powerful custom sound system & dynamic moving-head lights",
     srv1_f3: "Flexible indoor or outdoor setup tailored to your venue",
     srv1_cta: "Inquire for a Private Party",
-    srv2_ribbon: "Tailored Setup",
+    srv2_ribbon: "Most Popular",
     srv2_title: "Weddings",
     srv2_desc: "Complete musical & technical coverage from guest arrival and ceremony to the first dance and late-night party. Features our aesthetic wooden DJ booth with optional custom couple signage and music for every generation.",
     srv2_f1: "All-generations music curated around your personal taste",
@@ -124,29 +164,63 @@ const translations = {
     srv3_f2: "Full technical support for speeches, awards & live musicians",
     srv3_f3: "Reliable execution, crystal-clear sound & professional lighting",
     srv3_cta: "Inquire for a Corporate Event",
-    about_kicker: "WHO WE ARE",
-    about_title: "Combining Music & Engineering",
+    vant_kicker: "MEET THE DJ",
+    vant_title: 'Luka — <span class="text-gradient">DJ Vant</span>',
+    vant_lead: "From packed club dancefloors and student nights (Klub Cirkus and other club stages) to elegant wedding celebrations and private parties.",
+    vant_p1: 'As <strong>DJ Vant</strong>, I bring authentic club mixing technique, live crowd reading, and open-format versatility that unites every generation on the dancefloor. No pre-recorded playlists — every set is mixed live in response to the room’s energy.',
+    vant_p2: "Whether it’s peak-hour club energy with modern house, tech-house, hip-hop, and commercial hits, or a wedding reception filled with disco, pop/rock, ex-Yu, and timeless classics — I keep the dancefloor moving until morning.",
+    g_tag1: "House & Club Hits",
+    g_tag2: "80s / 90s / 00s Classics",
+    g_tag3: "Pop, Rock & Disco",
+    g_tag4: "Balkan / Ex-Yu & Local",
+    g_tag5: "Latino & R&B",
+    g_tag6: "Custom Couple / Guest Requests",
+    stat1_label: "Pro club-standard gear",
+    stat2_label: "All generations & musical styles",
+    stat3_label: "Seamless transitions & crowd reading",
+    vphoto1_tag: "DJ Vant in action",
+    vphoto2_tag: "Klub Cirkus",
+    vphoto3_tag: "Packed dancefloor",
+    about_kicker: "WEDDINGS, SOUND & PRODUCTION",
+    about_title: "Gašper’s Sound & Lighting Engineering",
     about_fb_bio: '“We combine music and technology. Luka (DJ Vant) brings club experience and spins music for all generations. Gašper, as the technician, takes care of the lighting and our custom-built sound system. We also have equipment to support live performances with stage monitors.”',
-    luka_title: "Luka — DJ Vant",
-    luka_desc: "Brings authentic club experience, crowd-reading instincts, and smooth transitions. His open-format repertoire spans all generations — from modern club, house, and commercial hits to timeless pop, rock, disco, and regional favorites.",
-    gasper_title: "Gašper — Sound & Light Technician",
-    gasper_desc: "Ensures pristine audio using a custom-built sound system (high-output subwoofers and tops) paired with programmed moving-head and ambient lighting. We also provide stage monitors and audio support for live performers.",
-    specs_heading: "What we bring to your venue",
+    specs_heading: "Why our setup is ideal for weddings & events",
     spec1_t: "Custom-Built Sound System",
-    spec1_d: "Punchy, warm, and crystal-clear sound with dedicated subwoofers and tops scaled to your venue.",
-    spec2_t: "Lighting & Visual Effects",
-    spec2_d: "Dynamic moving-head fixtures and ambient lighting to create a true club or wedding atmosphere.",
-    spec3_t: "Live Performance & Monitor Support",
-    spec3_d: "Microphones, mixing, and stage monitors to support live singers, bands, or event speakers.",
-    spec4_t: "Handcrafted Wooden DJ Booth",
-    spec4_d: "Clean, stylish stage presence — with optional personalized signage for weddings.",
-    gallery_kicker: "GALLERY & SETUP",
-    gallery_title: "Our Live Setup in Action",
-    gallery_subtitle: "Photos from our official L&G DJ, Sound & Light Facebook profile — showcasing our custom-built sound system, lighting rig, and customizable wooden DJ booth.",
-    gal1_title: "Full Setup for Parties & Events",
-    gal1_desc: "Luka (DJ Vant) at the decks flanked by our custom-built subwoofers, tops, and moving-head lighting.",
-    gal2_title: "Wedding Setup with Personalized Booth Signage",
-    gal2_desc: "Our aesthetic wooden DJ booth customized for a wedding reception, complete with full sound and light production.",
+    spec1_d: "Gašper’s handcrafted subwoofers and tops deliver warm, punchy, and crystal-clear sound — equally suited for intimate speeches and high-energy dancing.",
+    spec2_t: "Handcrafted Wooden DJ Booth with Custom Signage",
+    spec2_d: "Instead of messy cables and metal stands, we bring a clean wooden DJ booth that blends into wedding and rustic venues, with optional personalized couple signage.",
+    spec3_t: "Live Musicians, Singers & Speech Support",
+    spec3_d: "Weddings and events often feature live singers, instrumentalists, or speeches — we provide an auxiliary mixer, stand microphones, and stage wedges/monitors.",
+    spec4_t: "Programmed Lighting & Evening Atmosphere",
+    spec4_d: "Moving-head fixtures and color washes that create a warm romantic ambiance during dinner and transform the venue into a club dancefloor at night.",
+    wcap1_t: "View from the DJ Booth at Night",
+    wcap1_d: "Dinner music & open-air party under the string lights",
+    wcap2_t: "Live Performance Support",
+    wcap2_d: "Microphones, live mixer & stage monitor wedge",
+    wcap3_t: "Rustic & Outdoor Venues",
+    wcap3_d: "Our wooden DJ booth fits naturally into any setting",
+    gallery_kicker: "PHOTO GALLERY",
+    gallery_title: "Moments from Club Shows, Weddings & Events",
+    gallery_subtitle: "Explore photos from DJ Vant’s club gigs, wedding setups, and our custom-built sound and lighting system. Click any photo to enlarge.",
+    filter_all: "All Photos",
+    filter_weddings: "Weddings & Sound Setup",
+    filter_vant: "DJ Vant & Clubs",
+    tag_wedding: "Wedding",
+    tag_club: "Club Show",
+    tag_vant: "DJ Vant",
+    tag_tech: "Sound & Tech",
+    g1_title: "Personalized Wedding DJ Booth",
+    g2_title: "DJ Vant — Klub Cirkus",
+    g3_title: "Evening Wedding Atmosphere",
+    g4_title: "Live Club Mixing on Pioneer DJ",
+    g5_title: "High Energy & Packed Dancefloor",
+    g6_title: "Stage Monitor & Mic Setup for Live Acts",
+    g7_title: "Club & Event Stage Production",
+    g8_title: "Wooden Pavilion Sound Setup",
+    g9_title: "Unforgettable Party Until Morning",
+    g10_title: "Behind the Decks Under the Disco Ball",
+    g11_title: "Classic Party Sound & Light Rig",
+    g12_title: "Good Vibes Behind the Mixer",
     fb_bar_sub: "Follow us on our official Facebook profile",
     fb_btn: "Open Facebook Profile",
     book_kicker: "CONTACT & BOOKINGS",
@@ -181,7 +255,7 @@ const mailtoTemplates = {
     },
     wedding: {
       subject: "Povpraševanje: Poroka | L&G DJ, Sound & Light",
-      body: "Pozdravljena Luka in Gašper!\n\nZanimava se za DJ-ja, ozvočenje in luči za POROKO:\n- Datum poroke: \n- Lokacija poročnega slavja: \n- Okvirno število svatov: \n- Ali potrebujete tudi ozvočenje obreda / sprejema: \n- Posebne glasbene želje ali živi nastopi: \n\nLep pozdrav,"
+      body: "Pozdravljena Luka in Gašper!\n\nZanimava se za DJ-ja, ozvočenje in luči za POROKO:\n- Datum poroke: \n- Lokacija poročnega slavja: \n- Okvirno število svatov: \n- Ali potrebujete tudi ozvočenje obreda / sprejema / živih nastopov: \n- Želje glede personaliziranega napisa na leseni DJ mizi: \n\nLep pozdrav,"
     },
     corporate: {
       subject: "Povpraševanje: Poslovni dogodek | L&G DJ, Sound & Light",
@@ -199,7 +273,7 @@ const mailtoTemplates = {
     },
     wedding: {
       subject: "Booking Inquiry: Wedding | L&G DJ, Sound & Light",
-      body: "Hi Luka and Gašper!\n\nWe are interested in booking DJ, sound, and lighting for our WEDDING:\n- Wedding date: \n- Venue / Location: \n- Estimated number of guests: \n- Do you also need ceremony / reception audio coverage?: \n- Music preferences or live performance monitor needs: \n\nBest regards,"
+      body: "Hi Luka and Gašper!\n\nWe are interested in booking DJ, sound, and lighting for our WEDDING:\n- Wedding date: \n- Venue / Location: \n- Estimated number of guests: \n- Do you also need ceremony / reception / live musician monitor support?: \n- Custom couple signage on the wooden DJ booth?: \n\nBest regards,"
     },
     corporate: {
       subject: "Booking Inquiry: Corporate Event | L&G DJ, Sound & Light",
@@ -225,7 +299,6 @@ function applyLanguage(lang) {
   document.documentElement.setAttribute("data-lang", lang);
   document.title = translations[lang].page_title;
 
-  // Update all data-i18n elements
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
     if (translations[lang][key]) {
@@ -233,13 +306,11 @@ function applyLanguage(lang) {
     }
   });
 
-  // Update all dynamic mailto links
   document.querySelectorAll("[data-mailto]").forEach((link) => {
     const type = link.getAttribute("data-mailto");
     link.setAttribute("href", buildMailtoHref(lang, type));
   });
 
-  // Update language buttons state
   document.querySelectorAll("[data-set-lang]").forEach((btn) => {
     const isMatch = btn.getAttribute("data-set-lang") === lang;
     btn.classList.toggle("active", isMatch);
@@ -248,10 +319,9 @@ function applyLanguage(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Initialize language
   applyLanguage(currentLang);
 
-  // Language switcher listeners
+  // Language switcher
   document.querySelectorAll("[data-set-lang]").forEach((btn) => {
     btn.addEventListener("click", () => {
       applyLanguage(btn.getAttribute("data-set-lang"));
@@ -289,6 +359,61 @@ document.addEventListener("DOMContentLoaded", () => {
         mainNav.classList.remove("open");
         mobileMenuBtn.setAttribute("aria-expanded", "false");
       });
+    });
+  }
+
+  // Gallery category filter
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const galleryItems = document.querySelectorAll(".m-item");
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filter = btn.getAttribute("data-filter");
+      filterBtns.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      galleryItems.forEach((item) => {
+        const cat = item.getAttribute("data-category");
+        if (filter === "all" || cat === filter) {
+          item.classList.remove("hidden");
+        } else {
+          item.classList.add("hidden");
+        }
+      });
+    });
+  });
+
+  // Lightbox modal for gallery photos
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+  const lightboxCaption = document.getElementById("lightboxCaption");
+  const lightboxClose = document.getElementById("lightboxClose");
+
+  if (lightbox && lightboxImg && lightboxClose) {
+    galleryItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        const fullSrc = item.getAttribute("data-full");
+        const titleEl = item.querySelector("strong");
+        lightboxImg.src = fullSrc;
+        lightboxCaption.textContent = titleEl ? titleEl.textContent : "";
+        lightbox.classList.add("open");
+        lightbox.setAttribute("aria-hidden", "false");
+      });
+    });
+
+    const closeLightbox = () => {
+      lightbox.classList.remove("open");
+      lightbox.setAttribute("aria-hidden", "true");
+      lightboxImg.src = "";
+    };
+
+    lightboxClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && lightbox.classList.contains("open")) {
+        closeLightbox();
+      }
     });
   }
 });

@@ -53,6 +53,15 @@
     </div>
   </header>
 
+  <!-- Mobile Quick-Jump Strip -->
+  <nav class="mobile-quick-strip" aria-label="Hitra navigacija">
+    <a href="#storitve" class="quick-chip" data-i18n="nav_services">Ponudba</a>
+    <a href="#dj-vant" class="quick-chip" data-i18n="nav_vant">DJ Vant</a>
+    <a href="#poroke" class="quick-chip" data-i18n="nav_weddings">Poroke &amp; Tehnika</a>
+    <a href="#galerija" class="quick-chip" data-i18n="nav_gallery">Galerija</a>
+    <a href="#rezervacija" class="quick-chip quick-chip-accent" data-i18n="nav_book">Povpraševanje</a>
+  </nav>
+
   <main>
     <!-- Hero Section -->
     <section class="hero">
@@ -461,6 +470,12 @@
           </figure>
         </div>
 
+        <div class="gallery-More-wrap">
+          <button type="button" class="btn btn-secondary gallery-more-btn" id="galleryMoreBtn">
+            <span id="galleryMoreText" data-i18n="show_all_photos">Prikaži vse fotografije (12)</span>
+          </button>
+        </div>
+
         <div class="fb-bar">
           <div class="fb-bar-info">
             <img src="assets/images/logo_profile.jpg" alt="L&amp;G" class="fb-bar-logo" />
@@ -548,6 +563,18 @@
     <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
     <img src="" alt="" class="lightbox-img" id="lightboxImg" />
     <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <!-- Floating Sticky Contact / Booking Dock -->
+  <div class="floating-contact-dock" id="floatingDock">
+    <a href="#rezervacija" class="dock-btn dock-btn-scroll">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span data-i18n="float_contact">Kontakt &amp; Povpraševanje</span>
+    </a>
+    <a href="mailto:djvantmusic@gmail.com" class="dock-btn dock-btn-mail" data-mailto="general" aria-label="Pošlji e-mail">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      <span data-i18n="float_email_now">E-mail zdaj</span>
+    </a>
   </div>
 
   <!-- Footer -->

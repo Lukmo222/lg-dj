@@ -118,7 +118,11 @@ const translations = {
     open_mail_app: "Odpri e-pošto",
     booking_footnote: "* Opomba: Delava izključno preko študentske napotnice in nimava registrirane dejavnosti.",
     footer_tagline: "Luka (DJ Vant) & Gašper — Glasba, ozvočenje in luči za vse generacije.",
-    footer_legal: "Delo izključno preko študentske napotnice (brez registrirane dejavnosti)."
+    footer_legal: "Delo izključno preko študentske napotnice (brez registrirane dejavnosti).",
+    show_all_photos: "Prikaži vse fotografije (12)",
+    show_less_photos: "Prikaži manj fotografij",
+    float_contact: "Kontakt & Povpraševanje",
+    float_email_now: "E-mail zdaj"
   },
   en: {
     page_title: "L&G DJ, Sound & Light — DJ Vant & Gašper | Weddings, Parties & Corporate Events",
@@ -239,7 +243,11 @@ const translations = {
     open_mail_app: "Open Email App",
     booking_footnote: "* Note: We work exclusively via student referral (študentska napotnica) and do not have a registered business.",
     footer_tagline: "Luka (DJ Vant) & Gašper — Music, custom sound & lighting for all generations.",
-    footer_legal: "Operating exclusively via student referral (študentska napotnica) — no registered business entity."
+    footer_legal: "Operating exclusively via student referral (študentska napotnica) — no registered business entity.",
+    show_all_photos: "Show All Photos (12)",
+    show_less_photos: "Show Fewer Photos",
+    float_contact: "Contact & Inquiry",
+    float_email_now: "Email Now"
   }
 };
 
@@ -415,5 +423,34 @@ document.addEventListener("DOMContentLoaded", () => {
         closeLightbox();
       }
     });
+  }
+
+  // Mobile "Show All Photos" toggle
+  const galleryMoreBtn = document.getElementById("galleryMoreBtn");
+  const galleryMoreText = document.getElementById("galleryMoreText");
+  const galleryGrid = document.getElementById("galleryGrid");
+  if (galleryMoreBtn && galleryMoreText && galleryGrid) {
+    galleryMoreBtn.addEventListener("click", () => {
+      const expanded = galleryGrid.classList.toggle("expanded-mobile");
+      galleryMoreText.setAttribute("data-i18n", expanded ? "show_less_photos" : "show_all_photos");
+      galleryMoreText.textContent = expanded
+        ? translations[currentLang].show_less_photos
+        : translations[currentLang].show_all_photos;
+    });
+  }
+
+  // Auto-hide floating contact dock when user is already at #rezervacija section
+  const floatingDock = document.getElementById("floatingDock");
+  const bookingSection = document.getElementById("rezervacija");
+  if (floatingDock && bookingSection && "IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          floatingDock.classList.toggle("dock-hidden", entry.isIntersecting);
+        });
+      },
+      { threshold: 0.25 }
+    );
+    observer.observe(bookingSection);
   }
 });

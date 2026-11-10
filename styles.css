@@ -1232,6 +1232,82 @@ body {
   color: var(--text-muted);
 }
 
+/* Mobile Quick-Jump Strip (hidden on desktop) */
+.mobile-quick-strip {
+  display: none;
+}
+
+/* Gallery Show More Button (hidden on desktop) */
+.gallery-More-wrap {
+  display: none;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* Floating Contact Dock */
+.floating-contact-dock {
+  position: fixed;
+  bottom: 18px;
+  right: 22px;
+  z-index: 95;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: rgba(10, 12, 20, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(245, 185, 66, 0.45);
+  padding: 0.4rem;
+  border-radius: 999px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.65), 0 0 20px rgba(245, 185, 66, 0.18);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.floating-contact-dock.dock-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+
+.dock-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.62rem 1.05rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.dock-btn svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.dock-btn-scroll {
+  background: var(--accent-primary);
+  color: #07080d;
+}
+
+.dock-btn-scroll:hover {
+  background: #ffca57;
+}
+
+.dock-btn-mail {
+  background: rgba(255, 255, 255, 0.09);
+  color: var(--text-main);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.dock-btn-mail:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
 /* Responsive Media Queries */
 @media (max-width: 1024px) {
   .hero-grid,
@@ -1248,20 +1324,37 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 1.1rem;
+  }
+
+  .nav-container {
+    height: 64px;
+  }
+
+  .brand-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .brand-name {
+    font-size: 1.12rem;
+  }
+
   .mobile-menu-btn {
     display: flex;
   }
 
   .main-nav {
     position: absolute;
-    top: 78px;
+    top: 64px;
     left: 0;
     right: 0;
     background: rgba(10, 12, 20, 0.98);
     border-bottom: 1px solid var(--border-subtle);
     flex-direction: column;
-    padding: 1.5rem;
-    gap: 1.15rem;
+    padding: 1.25rem;
+    gap: 1rem;
     display: none;
   }
 
@@ -1269,27 +1362,184 @@ body {
     display: flex;
   }
 
-  .vant-photos,
-  .masonry-gallery,
-  .vant-stats {
-    grid-template-columns: 1fr;
+  /* Sticky Horizontal Quick-Jump Bar on Mobile */
+  .mobile-quick-strip {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    overflow-x: auto;
+    padding: 0.55rem 1rem;
+    background: rgba(12, 14, 23, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-subtle);
+    position: sticky;
+    top: 64px;
+    z-index: 90;
+    scrollbar-width: none;
+  }
+
+  .mobile-quick-strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  .quick-chip {
+    flex-shrink: 0;
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-subtle);
+    padding: 0.36rem 0.8rem;
+    border-radius: 999px;
+  }
+
+  .quick-chip-accent {
+    color: #07080d;
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    font-weight: 700;
+  }
+
+  /* More compact vertical spacing on phones */
+  .hero {
+    padding: 1.75rem 0 2.25rem;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-lead {
+    font-size: 0.96rem;
+    margin-bottom: 1.35rem;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-bottom: 1.35rem;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+    padding: 0.82rem 1.2rem;
+  }
+
+  .section {
+    padding: 2.65rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 1.55rem;
+  }
+
+  .service-img-banner {
+    height: 175px;
+  }
+
+  .service-card-body {
+    padding: 1.3rem;
+  }
+
+  .vant-photos {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem;
   }
 
   .vant-tall {
-    min-height: 300px;
+    min-height: 230px;
   }
 
-  .student-notice-card {
-    flex-direction: column;
-    padding: 1.4rem;
+  .vant-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .stat-item strong {
+    font-size: 0.92rem;
+  }
+
+  .stat-item span {
+    font-size: 0.72rem;
+  }
+
+  /* 2-column compact gallery on phones + show 6 by default */
+  .masonry-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .m-item {
+    aspect-ratio: 1 / 1;
+  }
+
+  .m-overlay {
+    padding: 1.2rem 0.65rem 0.55rem;
+  }
+
+  .m-overlay strong {
+    font-size: 0.78rem;
+    line-height: 1.2;
+  }
+
+  .m-tag {
+    font-size: 0.6rem;
+    padding: 0.1rem 0.4rem;
+  }
+
+  .masonry-gallery:not(.expanded-mobile) .m-item:nth-child(n+7) {
+    display: none;
+  }
+
+  .gallery-More-wrap {
+    display: flex;
   }
 
   .booking-panel {
-    padding: 2rem 1.25rem;
+    padding: 1.65rem 1.15rem;
+    border-radius: 20px;
   }
 
   .direct-email-box {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    padding: 1.15rem;
+  }
+
+  .direct-email-actions {
+    width: 100%;
+  }
+
+  .direct-email-actions .btn {
+    flex: 1;
+    padding: 0.75rem 0.9rem;
+    font-size: 0.86rem;
+  }
+
+  .site-footer {
+    padding-bottom: 5.5rem;
+  }
+
+  /* Full-width centered bottom floating bar on phones */
+  .floating-contact-dock {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    justify-content: space-between;
+  }
+
+  .dock-btn-scroll {
+    flex: 1.25;
+  }
+
+  .dock-btn-mail {
+    flex: 0.95;
   }
 }

@@ -885,45 +885,112 @@ body {
   position: fixed;
   inset: 0;
   z-index: 999;
-  background: rgba(8, 8, 7, 0.95);
+  background: rgba(8, 8, 7, 0.96);
   display: none;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  user-select: none;
 }
 
 .lightbox.open {
   display: flex;
 }
 
+.lightbox-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 84vw;
+}
+
 .lightbox-close {
   position: absolute;
   top: 20px;
-  right: 28px;
+  right: 24px;
+  z-index: 1002;
   background: var(--bg-card);
   border: 1px solid var(--border-strong);
-  color: #fff;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
+  color: var(--text-main);
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
   font-size: 1.6rem;
   line-height: 1;
   cursor: pointer;
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+
+.lightbox-close:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1002;
+  background: rgba(21, 20, 18, 0.92);
+  border: 1px solid var(--border-strong);
+  color: var(--text-main);
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  font-size: 1.3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.lightbox-nav:hover {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: #0a0a09;
+}
+
+.lightbox-prev {
+  left: 24px;
+}
+
+.lightbox-next {
+  right: 24px;
 }
 
 .lightbox-img {
-  max-width: 92vw;
-  max-height: 80vh;
+  max-width: 82vw;
+  max-height: 78vh;
   border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
   object-fit: contain;
 }
 
+.lightbox-meta {
+  margin-top: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
 .lightbox-caption {
-  margin-top: 1rem;
   font-family: var(--font-display);
   font-size: 1rem;
   color: var(--text-main);
+}
+
+.lightbox-counter {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent-primary);
+  border: 1px solid var(--border-highlight);
+  padding: 0.18rem 0.55rem;
+  border-radius: 4px;
 }
 
 .fb-bar {
@@ -1373,6 +1440,35 @@ body {
 
   .gallery-More-wrap {
     display: flex;
+  }
+
+  .lightbox {
+    padding: 1rem;
+  }
+
+  .lightbox-stage {
+    max-width: 94vw;
+  }
+
+  .lightbox-img {
+    max-width: 94vw;
+    max-height: 70vh;
+  }
+
+  .lightbox-nav {
+    top: auto;
+    bottom: 24px;
+    transform: none;
+    width: 52px;
+    height: 46px;
+  }
+
+  .lightbox-prev {
+    left: 24px;
+  }
+
+  .lightbox-next {
+    right: 24px;
   }
 
   .booking-panel {

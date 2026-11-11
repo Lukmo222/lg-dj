@@ -605,9 +605,16 @@
 
   <!-- Lightbox Modal for Gallery -->
   <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
-    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
-    <img src="" alt="" class="lightbox-img" id="lightboxImg" />
-    <p class="lightbox-caption" id="lightboxCaption"></p>
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Zapri">&times;</button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Prejšnja fotografija">&#8592;</button>
+    <div class="lightbox-stage">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+      <div class="lightbox-meta">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+        <span class="lightbox-counter" id="lightboxCounter"></span>
+      </div>
+    </div>
+    <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Naslednja fotografija">&#8594;</button>
   </div>
 
   <!-- Floating Sticky Contact / Booking Dock -->

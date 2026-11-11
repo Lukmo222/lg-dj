@@ -1150,11 +1150,11 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
   text-decoration: none;
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   font-weight: 700;
-  padding: 0.58rem 0.95rem;
+  padding: 0.68rem 1.25rem;
   border-radius: 4px;
   transition: all 0.18s ease;
   white-space: nowrap;
@@ -1163,12 +1163,11 @@ body {
 .dock-btn-scroll {
   background: var(--accent-primary);
   color: #0a0a09;
+  width: 100%;
 }
 
-.dock-btn-mail {
-  background: var(--bg-card);
-  color: var(--text-main);
-  border: 1px solid var(--border-subtle);
+.dock-btn-scroll:hover {
+  background: #ecc178;
 }
 
 /* Responsive Media Queries */
@@ -1391,17 +1390,19 @@ body {
   }
 
   .floating-contact-dock {
-    left: 12px;
-    right: 12px;
-    bottom: 12px;
-    justify-content: space-between;
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    padding: 0;
+    border: none;
+    background: transparent;
   }
 
   .dock-btn-scroll {
-    flex: 1.3;
-  }
-
-  .dock-btn-mail {
-    flex: 0.9;
+    width: 100%;
+    padding: 0.82rem 1.2rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.7);
   }
 }

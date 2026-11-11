@@ -675,7 +675,17 @@ body {
   color: var(--text-main);
   border-left: 2px solid var(--accent-primary);
   padding: 0.4rem 0 0.4rem 1.25rem;
-  margin: 1.25rem 0 1.85rem;
+  margin: 1.25rem 0 1.15rem;
+}
+
+.about-desc {
+  color: var(--text-muted);
+  font-size: 0.96rem;
+  margin-bottom: 1.65rem;
+}
+
+.about-desc strong {
+  color: var(--text-main);
 }
 
 .specs-box {

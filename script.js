@@ -1,6 +1,6 @@
 const translations = {
   sl: {
-    page_title: "vajindj.si — L&G DJ, Sound & Light | DJ Vant & Gašper",
+    page_title: "DJ za poroko, zabavo in dogodke | vajindj.si — L&G DJ, Sound & Light",
     nav_services: "Ponudba",
     nav_vant: "DJ Vant",
     nav_weddings: "Poroke & Tehnika",
@@ -122,7 +122,7 @@ const translations = {
     float_email_now: "E-mail"
   },
   en: {
-    page_title: "vajindj.si — L&G DJ, Sound & Light | DJ Vant & Gašper",
+    page_title: "Wedding & Event DJ in Slovenia | vajindj.si — L&G DJ, Sound & Light",
     nav_services: "Services",
     nav_vant: "DJ Vant",
     nav_weddings: "Weddings & Tech",
